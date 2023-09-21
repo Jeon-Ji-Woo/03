@@ -3,17 +3,17 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-int main(void)
-{
-	char c;
+int main(void) {
+	int a;
+	int b;
 	
-	printf("input a charcter");
-	scanf("%c", &c);
+	printf("분자를 입력하세요 :");
+	scanf("%d" ,&a);
 	
-	printf("the next charcter of &c (&d) is &c (&d)\n",c,c,c+1,c+2);
+	printf("분모를 입력하세요 :");
+	scanf("%d",&b);
 	
-	system("PAUSE");
-	return 0;
+	printf("나누기의 결과는 %0.6f 입니다.",(float)a/b);
 	
-
+	return 0; 
 }
