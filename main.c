@@ -5,13 +5,15 @@
 
 int main(int argc, char *argv[]) {
 	
-	char c;
+	int ja, mo;
 	
-	printf("enter a character :");
-	scanf("%c", &c);
+	printf("enter a bunja :");
+	scanf("%d", &ja);
 	
-	char next = c + 1;
-	printf("The next character of %c is %c\n", c, next);
+	printf("enter a bunmo :");
+	scanf("%d", &mo);
+	
+	printf("The result is %f\n", (float)ja/mo);
 	
 	return 0;
 }
